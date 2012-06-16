@@ -1,0 +1,80 @@
+﻿Airbus A330-300 Pilot's Operating Handbook
+
+Dimensions
+Length - 		208'11''
+Wing Span - 		197'9''
+Height - 		58'0''
+
+Weights (lbs)
+Empty Weight - 	262,395 lbs
+Fuel Weight -	172,768 lbs
+Payload - 		106,722 lbs
+Max.TOW -		520,150 lbs
+Max. LW -		407,320 lbs
+
+Powerplants
+A330-303 - 	General Electric CF6-80E1 Engines (71,000 lbs thrust)
+A330-323 - 	Pratt and Whitney PW4000 Engines (69,000 lbs thrust)
+A330-343 -	Rolls Royce Trent 772B-60 Engines (72,000 lbs thrust)
+
+Operating Performance
+
+Mno 	0.82 Mach Normal Operating Speed 
+Mmo 	0.86 Mach Max. Operating Speed 
+Mne 	0.93 Mach Never Exceed Speed 
+Vno 	330 knots Normal Operating Speed IAS 
+Vmo 	360 knots Max. Operating Speed IAS 
+Vne 	380 knots Never Exceed Speed IAS 
+Vap	136 – 155 knots (based on total weight) @ Max Flaps/Gears Down
+Vtd	125 – 142 knots (based on total weight)
+
+DO NOT EXCEED 250 KTS AT OR BELOW 10,000 FT ALTITUDE
+
+Take-off Speed @ MTOW
+
+V1 (Decision Speed) - 	140 knots @ Flaps 2 or 3
+VR (Rotation Speed) - 	145 knots
+V2 (Safety Speed) - 	155 knots
+
+Cruise Speed
+
+Max Cruise Speed (GS) is 500 kts @ FL300 – FL350 depending on weight
+Typical Cruise Mach is 0.78M – 0.82M @ FL300 – FL350
+Long Range Cruise is 465 kts (GS)  @ FL350
+
+ILS & Appraoch Speed @ MLW
+
+180 kts Flaps 2 to 136 – 155 knots Full Flaps/Gear Down
+Vapp = 1.3 x Vso (Stall Speed)
+
+
+Flaps and Gears Extension Speeds
+
+Flaps 1		240 knots
+Flaps 2 + Slats	215 knots
+Flaps 3 + Slats	196 knots
+Flaps 4 + Gear	186 knots
+Max. Gear Ext.	220 knots
+
+
+NOTE – The 1+F and 2+F configurations for slats have been removed as in FlightGear, the flaps and slats move together.
+
+Important Cruise Notes
+
+When flying long routes (over 4hrs) with MTOW, climb to FL300 & hold Alt with cruise speed 0.78 - 0.80 Mach , then fly that level for 30-45 min. then climb to FL310 - 320 @500 fpm and so on until you reach FL350 @ 0.80 - 0.82 Mach. 
+Try not exceed 91% N1 during cruise in order to have available thrust for emergencies & be more efficient with fuel burn. 
+
+FAA Field Lengths
+
+Take-off Runway Length	8,700 ft to 9,000 ft 
+Landing Runway Length	5,500 ft to 6,000 ft
+
+ETOPS Extended Twin-Engine Operations
+
+If an engine failure occur during cruise forcing an engine shutdown, fly a descend profile on the remaining engine to FL160 (16,000ft) & hold speed between 300 - 420kts. Do not forget to trim to compensate for your lost engine. The A330 can fly the remaining trip on one engine & land @ MLW or lower. 
+
+The Airbus A330 is fitted with engines certified ETOPS for 90 , 120 & 180 minutes.
+
+
+
+Please checkout the wiki page (http://wiki.flightgear.org/Airbus_A330-200_Series) for more information on the aircraft. Operation Manuals, Checklists and Briefings will be available soon.
