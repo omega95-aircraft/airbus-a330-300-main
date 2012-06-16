@@ -1,0 +1,41 @@
+This list includes all A330-300 operators for the 303, 323 and 343 variants. 
+Thanks to Chris Mueffelmann (Muffinman) for compiling this list.
+
+A330-303:
+Qantas
+
+A330-323:
+Air Caraibes
+Asiana Airlines
+Delta
+Korean Air
+Malaysia
+Thai Airways International
+US Airways
+
+A330-343:
+Aeroflot
+Air Canada
+Air China
+AirAsia X
+Cathay Pacific
+China Eastern
+China Southern
+Dragonair
+Edelweiss Air
+EgyptAir
+Etihad
+Hainan
+Lufthansa
+Oman Air
+Orbest Orizonia
+Ryan International Airlines
+Saudi Arabian
+SAS
+Singapore
+Swiss International
+Thai Airways International
+Thomas Cook Airlines Scandinavia
+Turkish Airlines
+Virgin Atlantic
+XL Airways (Orbest)
