@@ -85,8 +85,8 @@ var terrain_map = func {
 
 var get_elev = func (row, col, range, hdg) {
 
-	var x = (col - 14) * (range / 14);
-	var y = (row - 14) * (range / 14);
+	var x = (col - 14) * (range / 10);
+	var y = (row - 14) * (range / 10);
 	
 	var pos = geo.aircraft_position();
 	
