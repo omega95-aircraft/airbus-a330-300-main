@@ -12,8 +12,8 @@
 		<model>
 			<path>Aircraft/A330-300/Models/A330-303.xml</path>
 			<livery>
-				<file>blank</file>
-				<a333-texture>Liveries/A330-303/livery-blank.png</a333-texture>
+				<file>QFA</file>
+				<a333-texture>Liveries/A330-303/QFA.png</a333-texture>
 			</livery>
 	            	<!-- door n="0">
 		                <position-x-m>-11.3399</position-x-m>
