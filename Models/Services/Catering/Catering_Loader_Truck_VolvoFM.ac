@@ -4,7 +4,7 @@ OBJECT world
 kids 33
 OBJECT poly
 name "Cube"
-loc -17.882 -4.72513 -7.33487
+loc -20.6677 -4.72513 -7.22455
 data 8
 Cube.075
 texture "Catering_Loader_Truck_VolvoFM.png"
@@ -64,7 +64,7 @@ refs 4
 kids 0
 OBJECT poly
 name "Cube.003"
-loc -17.882 -4.72513 -7.33487
+loc -20.6677 -4.72513 -7.22455
 data 8
 Cube.003
 texture "Catering_Loader_Truck_VolvoFM.png"
@@ -1631,7 +1631,7 @@ refs 4
 kids 0
 OBJECT poly
 name "Cube.004"
-loc -17.882 -4.72513 -7.33487
+loc -20.6677 -4.72513 -7.22455
 data 8
 Cube.004
 texture "Catering_Loader_Truck_VolvoFM.png"
@@ -1766,7 +1766,7 @@ refs 4
 kids 0
 OBJECT poly
 name "gourmet_cargo"
-loc -17.882 -4.95201 -7.33487
+loc -20.6677 -4.95201 -7.22455
 data 8
 Cube.076
 texture "Catering_Loader_Truck_VolvoFM_cargo.png"
@@ -2602,7 +2602,7 @@ refs 4
 kids 0
 OBJECT poly
 name "Cube.006"
-loc -17.882 -4.72513 -7.33487
+loc -20.6677 -4.72513 -7.22455
 data 8
 Cube.006
 texture "Catering_Loader_Truck_VolvoFM.png"
@@ -2662,7 +2662,7 @@ refs 4
 kids 0
 OBJECT poly
 name "Cube.007"
-loc -17.882 -4.72513 -7.33487
+loc -20.6677 -4.72513 -7.22455
 data 8
 Cube.007
 texture "Catering_Loader_Truck_VolvoFM.png"
@@ -2722,7 +2722,7 @@ refs 4
 kids 0
 OBJECT poly
 name "Cube.008"
-loc -17.882 -4.72513 -7.33487
+loc -20.6677 -4.72513 -7.22455
 data 8
 Cube.008
 texture "Catering_Loader_Truck_VolvoFM.png"
@@ -3290,7 +3290,7 @@ refs 3
 kids 0
 OBJECT poly
 name "Cube.009"
-loc -17.882 -4.72513 -7.33487
+loc -20.6677 -4.72513 -7.22455
 data 8
 Cube.009
 texture "Catering_Loader_Truck_VolvoFM.png"
@@ -3350,7 +3350,7 @@ refs 4
 kids 0
 OBJECT poly
 name "Cube.010"
-loc -17.882 -4.72513 -7.33487
+loc -20.6677 -4.72513 -7.22455
 data 8
 Cube.010
 texture "Catering_Loader_Truck_VolvoFM.png"
@@ -3752,7 +3752,7 @@ refs 4
 kids 0
 OBJECT poly
 name "Cube.011"
-loc -17.882 -4.72513 -7.33487
+loc -20.6677 -4.72513 -7.22455
 data 8
 Cube.011
 texture "Catering_Loader_Truck_VolvoFM.png"
@@ -3862,7 +3862,7 @@ refs 4
 kids 0
 OBJECT poly
 name "Cube.012"
-loc -17.882 -4.72513 -7.33487
+loc -20.6677 -4.72513 -7.22455
 data 8
 Cube.012
 texture "Catering_Loader_Truck_VolvoFM.png"
@@ -3922,7 +3922,7 @@ refs 4
 kids 0
 OBJECT poly
 name "Cube.013"
-loc -17.882 -4.72513 -7.33487
+loc -20.6677 -4.72513 -7.22455
 data 8
 Cube.013
 texture "Catering_Loader_Truck_VolvoFM.png"
@@ -4032,7 +4032,7 @@ refs 4
 kids 0
 OBJECT poly
 name "Cube.015"
-loc -17.882 -4.72513 -7.33487
+loc -20.6677 -4.72513 -7.22455
 data 8
 Cube.079
 texture "Catering_Loader_Truck_VolvoFM.png"
@@ -4085,7 +4085,7 @@ refs 4
 kids 0
 OBJECT poly
 name "Cube.016"
-loc -17.882 -4.72513 -7.33487
+loc -20.6677 -4.72513 -7.22455
 data 8
 Cube.082
 texture "Catering_Loader_Truck_VolvoFM.png"
@@ -4195,7 +4195,7 @@ refs 4
 kids 0
 OBJECT poly
 name "Cube.019"
-loc -17.882 -4.72513 -7.33487
+loc -20.6677 -4.72513 -7.22455
 data 8
 Cube.070
 texture "Catering_Loader_Truck_VolvoFM_cargo.png"
@@ -4305,7 +4305,7 @@ refs 4
 kids 0
 OBJECT poly
 name "door_connect"
-loc -17.882 -4.95201 -7.33487
+loc -20.6677 -4.95201 -7.22455
 data 8
 Cube.045
 texture "Catering_Loader_Truck_VolvoFM_cargo.png"
@@ -5023,7 +5023,7 @@ refs 4
 kids 0
 OBJECT poly
 name "Cube.027"
-loc -17.882 -4.72513 -7.33487
+loc -20.6677 -4.72513 -7.22455
 data 8
 Cube.058
 texture "Catering_Loader_Truck_VolvoFM_cargo.png"
@@ -5083,7 +5083,7 @@ refs 4
 kids 0
 OBJECT poly
 name "object"
-loc -17.882 -4.72513 -7.33487
+loc -20.6677 -4.72513 -7.22455
 data 8
 Cube.051
 texture "Catering_Loader_Truck_VolvoFM_cargo.png"
@@ -5143,7 +5143,7 @@ refs 4
 kids 0
 OBJECT poly
 name "gourmet_railing"
-loc -17.882 -4.95201 -7.33487
+loc -20.6677 -4.95201 -7.22455
 data 8
 Cube.052
 texture "Catering_Loader_Truck_VolvoFM_cargo.png"
@@ -5239,7 +5239,7 @@ refs 4
 kids 0
 OBJECT poly
 name "gourmet_scissor_inner"
-loc -17.882 -4.95205 -7.33485
+loc -20.6677 -4.95205 -7.22453
 data 8
 Cube.057
 texture "Catering_Loader_Truck_VolvoFM_cargo.png"
@@ -5935,7 +5935,7 @@ refs 3
 kids 0
 OBJECT poly
 name "Cube.044"
-loc -17.882 -4.72513 -7.33487
+loc -20.6677 -4.72513 -7.22455
 data 8
 Cube.072
 texture "Catering_Loader_Truck_VolvoFM_cargo.png"
@@ -6289,7 +6289,7 @@ refs 4
 kids 0
 OBJECT poly
 name "Cube.046"
-loc -17.882 -4.72513 -7.33487
+loc -20.6677 -4.72513 -7.22455
 data 8
 Cube.074
 texture "Catering_Loader_Truck_VolvoFM_cargo.png"
@@ -7011,7 +7011,7 @@ refs 4
 kids 0
 OBJECT poly
 name "gourmet_cargo"
-loc -17.882 -4.85593 -7.33487
+loc -20.6677 -4.85593 -7.22455
 data 8
 Cube.014
 texture "Catering_Loader_Truck_VolvoFM_cargo.png"
@@ -7121,7 +7121,7 @@ refs 4
 kids 0
 OBJECT poly
 name "Cylinder.001"
-loc -17.882 -4.72513 -7.33487
+loc -20.6677 -4.72513 -7.22455
 data 12
 Cylinder.001
 texture "Catering_Loader_Truck_VolvoFM.png"
@@ -8215,7 +8215,7 @@ refs 4
 kids 0
 OBJECT poly
 name "Cylinder.002"
-loc -17.882 -4.72513 -7.33487
+loc -20.6677 -4.72513 -7.22455
 data 12
 Cylinder.002
 texture "Catering_Loader_Truck_VolvoFM.png"
@@ -8733,7 +8733,7 @@ refs 3
 kids 0
 OBJECT poly
 name "Cylinder.003"
-loc -17.882 -4.72513 -7.33487
+loc -20.6677 -4.72513 -7.22455
 data 12
 Cylinder.003
 texture "Catering_Loader_Truck_VolvoFM.png"
@@ -8997,7 +8997,7 @@ refs 3
 kids 0
 OBJECT poly
 name "Cylinder.004"
-loc -17.882 -4.72513 -7.33487
+loc -20.6677 -4.72513 -7.22455
 data 12
 Cylinder.004
 texture "Catering_Loader_Truck_VolvoFM.png"
@@ -9251,7 +9251,7 @@ refs 4
 kids 0
 OBJECT poly
 name "Cylinder.005"
-loc -17.882 -4.72513 -7.33487
+loc -20.6677 -4.72513 -7.22455
 data 12
 Cylinder.005
 texture "Catering_Loader_Truck_VolvoFM.png"
@@ -9403,7 +9403,7 @@ refs 4
 kids 0
 OBJECT poly
 name "Cylinder.006"
-loc -17.882 -4.72513 -7.33487
+loc -20.6677 -4.72513 -7.22455
 data 12
 Cylinder.007
 texture "Catering_Loader_Truck_VolvoFM.png"
@@ -9667,7 +9667,7 @@ refs 3
 kids 0
 OBJECT poly
 name "Cylinder.007"
-loc -17.882 -4.72513 -7.33487
+loc -20.6677 -4.72513 -7.22455
 data 12
 Cylinder.006
 texture "Catering_Loader_Truck_VolvoFM.png"
@@ -9813,7 +9813,7 @@ refs 4
 kids 0
 OBJECT poly
 name "Cylinder.008"
-loc -17.882 -4.72513 -7.33487
+loc -20.6677 -4.72513 -7.22455
 data 12
 Cylinder.008
 texture "Catering_Loader_Truck_VolvoFM.png"
@@ -10907,7 +10907,7 @@ refs 4
 kids 0
 OBJECT poly
 name "Cylinder.009"
-loc -17.882 -4.72513 -7.33487
+loc -20.6677 -4.72513 -7.22455
 data 12
 Cylinder.009
 texture "Catering_Loader_Truck_VolvoFM.png"
@@ -11171,7 +11171,7 @@ refs 3
 kids 0
 OBJECT poly
 name "gourmet_scissor_outer"
-loc -17.882 -4.95201 -7.33487
+loc -20.6677 -4.95201 -7.22455
 data 12
 Cylinder.012
 texture "Catering_Loader_Truck_VolvoFM_cargo.png"

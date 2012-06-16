@@ -71,10 +71,16 @@
 		<object-name>winglet0</object-name>
 		<object-name>winglet1</object-name>
 		<!-- Engines -->
-		<object-name>pw.nacelle0</object-name>
-		<object-name>pw.reverser0</object-name>
-		<object-name>pw.nacelle1</object-name>
-		<object-name>pw.reverser1</object-name>
+		<object-name>rr.nacelle0</object-name>
+		<object-name>rr.nacelle1</object-name>
+		<object-name>rr.reverser.ul0</object-name>
+		<object-name>rr.reverser.ur0</object-name>
+		<object-name>rr.reverser.dl0</object-name>
+		<object-name>rr.reverser.dr0</object-name>
+		<object-name>rr.reverser.ul1</object-name>
+		<object-name>rr.reverser.ur1</object-name>
+		<object-name>rr.reverser.dl1</object-name>
+		<object-name>rr.reverser.dr1</object-name>
 		<property-base>sim/model/livery</property-base>
 		<texture-prop>a333-texture</texture-prop>
 	</animation>

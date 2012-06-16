@@ -61,7 +61,7 @@
 			<command>nasal</command>
 			<script>
 				if (getprop("services/catering/enable") == 1) {
-					a332.doors.toggle("cater_pos");
+					a333.doors.toggle("cater_pos");
 				} else
 					screen.log.write("Please Enable the Catering truck first", 1, 0, 0);
 			</script>

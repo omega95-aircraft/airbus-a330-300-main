@@ -34,13 +34,10 @@
 		   						<pref-height>20</pref-height>
 				    <property>/services/stairs/paint-end</property>
 				    <editable>true</editable>
-				    <value>merlion.png</value>
-				    <value>malaysia.png</value>
-				    <value>emirates.png</value>
+				    <value>white-grey.png</value>
 				    <value>blue-shade.png</value>
 				    <value>blue-stripes.png</value>
 				    <value>dark-red.png</value>
-				    <value>green-orange.png</value>
 				    <value>blank.png</value>
 				    <binding>
 				        <command>dialog-apply</command>

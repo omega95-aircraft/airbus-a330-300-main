@@ -71,10 +71,10 @@
 		<object-name>winglet0</object-name>
 		<object-name>winglet1</object-name>
 		<!-- Engines -->
-		<object-name>pw.nacelle0</object-name>
-		<object-name>pw.reverser0</object-name>
-		<object-name>pw.nacelle1</object-name>
-		<object-name>pw.reverser1</object-name>
+		<object-name>ge.nacelle0</object-name>
+		<object-name>ge.reverser0</object-name>
+		<object-name>ge.nacelle1</object-name>
+		<object-name>ge.reverser1</object-name>
 		<property-base>sim/model/livery</property-base>
 		<texture-prop>a333-texture</texture-prop>
 	</animation>

@@ -288,7 +288,7 @@
  <path>Aircraft/A330-300/Models/Services/Stairs/stairs.xml</path>
  <name>l1</name>
  <offsets>
-  <x-m>-17.028</x-m>
+  <x-m>-19.77</x-m>
   <y-m>-2.69</y-m>
   <z-m>0.0060</z-m>
   <heading-deg>-8</heading-deg>
@@ -315,7 +315,7 @@
  <path>Aircraft/A330-300/Models/Services/Stairs/stairs.xml</path>
  <name>l4</name>
  <offsets>
-  <x-m>22.42</x-m>
+  <x-m>24.37</x-m>
   <y-m>-2.56</y-m>
   <z-m>0.0060</z-m>
   <heading-deg>6</heading-deg>
