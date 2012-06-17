@@ -221,7 +221,7 @@
 		<name>Nosegear landing light</name>
 		<path>Aircraft/A330-300/Models/Lights/landing-nose.xml</path>
 		<offsets>
-			<x-m>-16.46</x-m>
+			<x-m>-19.16</x-m>
 			<y-m>0</y-m>
 			<z-m>-3.22</z-m>
 		</offsets>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<PropertyList>
+	<sim>
+		<model>
+			<livery>
+				<name>Singapore Airlines</name>
+				<a333-texture>Liveries/A330-343/SIA.png</a333-texture>
+			</livery>
+		</model>
+	</sim>
+</PropertyList>
