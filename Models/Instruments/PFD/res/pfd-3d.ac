@@ -60,7 +60,7 @@ refs 4
 3 0.791565 0.0104858
 kids 0
 OBJECT poly
-name "sidestick-max"
+name "trans"
 loc 0.000918277 -0.0216617 0.0287131
 texture "autoland.png"
 crease 45.000000
@@ -90,7 +90,7 @@ refs 4
 4 0.629302 0.0183234
 kids 0
 OBJECT poly
-name "sidestick-max"
+name "trans"
 loc 0.000918277 0.0234689 0.0287131
 texture "autoland.png"
 crease 45.000000
@@ -310,7 +310,7 @@ refs 4
 0 0.498074 0.0447528
 kids 0
 OBJECT poly
-name "rect"
+name "trans"
 loc 0.0643506 0 0
 texture "mask.png"
 crease 45.000000

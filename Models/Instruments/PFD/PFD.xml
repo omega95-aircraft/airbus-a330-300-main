@@ -6,6 +6,17 @@
 
 	<path>res/pfd-3d.ac</path>
 	
+	<effect>
+		<inherits-from>Effects/model-transparent</inherits-from>
+		<object-name>trans</object-name>
+		<object-name>gspointer</object-name>
+		<object-name>locpointer</object-name>
+		<object-name>bank</object-name>
+		<object-name>center</object-name>
+		<object-name>sidestick-pos</object-name>
+		<object-name>vsi</object-name>
+	</effect>
+	
 	<!-- AP Indicators Select -->
 	
 	<!-- AUTO-THROTTLE SECTION -->

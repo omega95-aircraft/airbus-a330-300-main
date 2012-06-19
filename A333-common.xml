@@ -284,6 +284,16 @@
 				</menu>
 			</default>
 		</menubar>
+		
+		<!-- Disable Rembrandt Ambient Occlusion -->
+	
+		<!-- prop=/sim/rendering/rembrandt/ambient-occlusion -->
+	
+		<rendering>
+			<rembrandt>
+				<ambient-occlusion type="bool">false</ambient-occlusion>
+			</rembrandt>		
+		</rendering>
 
 	</sim>
 
