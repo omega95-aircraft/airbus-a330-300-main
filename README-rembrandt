@@ -1,0 +1,34 @@
+NOTE- THIS VERSION IS REMBRANDT COMPATIBLE! :D
+
+The Airbus A330-300 series is an extended version of the Airbus A330-200 series by TheOmegaHangar. This package also includes 3 variants of the aircraft- A330-303 (General Electric CF6-80E1 Engines), A330-323 (Pratt and Whitney PW4000 Engines) and the A330-343 (Rolls Royce Trent 772B-60 Engines).
+
+The major changes undergone in the conversion of the A330-200 series to the A330-300 series includes:
+
+A. MODEL AND TEXTURE CHANGES
+
+1. 6 Fuselage Section Frames added in front of the wings (2.74 m)
+2. 4 Fuselage Section Frames added behind the winds (1.95 m)
+3. Rudder/Vertical Stabilizer height reduced (by 0.56 m)
+4. New Paintkits Created (fits new aircraft dimensions)
+5. UVMapped to the new paintkits
+
+B. FLIGHT DYNAMICS MODEL CHANGES
+
+1. Change in Gear and Body Contact Positions
+2. Change in Horizontal Tail Arm and Vertical Stabilizer Area
+3. Change Empty Weight and CoG tuning
+4. Change Fuel Tank Quantities and Capacities
+
+C. SYSTEMS AND INSTRUMENT CHANGES
+
+--- NO CHANGES ATM ---
+
+If you have any questions, please contact 'muraleen@my.erau.edu'
+
+Thank you for using the Airbus A330-300 series aircraft, be sure to try out the hangar's other aircraft:
+
+> Airbus A330-200 series
+> Airbus A320neo series
+> Jabiru j170
+> Boeing 787-8
+> Embraer E-jet series
