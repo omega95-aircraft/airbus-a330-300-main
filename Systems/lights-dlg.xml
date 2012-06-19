@@ -6,7 +6,7 @@
 	<layout>vbox</layout>
 
 	<text>
-		<label>A320 Light Controller</label>
+		<label>A330 Light Controller</label>
 	</text>
 
 	<hrule />
@@ -15,7 +15,7 @@
 		<layout>vbox</layout>
 
 		<text>
-			<label>Landing lights</label>
+			<label>Landing/Taxi lights</label>
 		</text>
 
 		<group>
@@ -31,14 +31,14 @@
 			</checkbox>
 
 			<checkbox>
-				<label>Nosegear</label>
+				<label>Taxi</label>
 				<property>controls/lighting/landing-lights[1]</property>
 				<binding>
 					<command>dialog-apply</command>
 				</binding>
 				<live>true</live>
 			</checkbox>
-
+			
 			<checkbox>
 				<label>Right</label>
 				<property>controls/lighting/landing-lights[2]</property>
@@ -47,6 +47,7 @@
 				</binding>
 				<live>true</live>
 			</checkbox>
+
 		</group>
 
 		<hrule/>
@@ -118,64 +119,26 @@
 			</binding>
 			<live>true</live>
 		</checkbox>
-
-<!--		<checkbox>
-			<label>Logo lights</label>
-			<property>controls/lighting/logo-lights</property>
-			<binding>
-				<command>dialog-apply</command>
-			</binding>
-			<live>true</live>
-		</checkbox>-->
-
-<!--		<checkbox>
-			<label>Flight deck lights</label>
+		
+		<hrule />
+		
+		<checkbox>
+			<label>Cockpit Lights</label>
 			<property>controls/lighting/cockpit</property>
 			<binding>
 				<command>dialog-apply</command>
 			</binding>
 			<live>true</live>
 		</checkbox>
-
-		<text>
-			<label>Cabin lighting</label>
-		</text>
-
-		<slider>
-			<width>200</width>
-			<property>controls/lighting/interior</property>
-			<step>0.05</step>
-			<min>0</min>
-			<max>1</max>
-			<binding>
-				<command>dialog-apply</command>
-			</binding>
-		</slider>
-
-		<text>
-			<label>Panel lighting</label>
-		</text>
-
-		<slider>
-			<width>200</width>
-			<property>controls/lighting/panel-norm</property>
-			<step>0.05</step>
-			<min>0</min>
-			<max>1</max>
-			<binding>
-				<command>dialog-apply</command>
-			</binding>
-		</slider>-->
-
+		
 		<checkbox>
-			<label>3D light cones</label>
-			<property>controls/lighting/cones</property>
+			<label>Wing Lights</label>
+			<property>controls/lighting/wing</property>
 			<binding>
 				<command>dialog-apply</command>
 			</binding>
 			<live>true</live>
 		</checkbox>
-	</group>
 
 	<hrule />
 
