@@ -7,12 +7,16 @@
 	<animation>
 		<type>select</type>
 		<object-name>nav-WL</object-name>
+		<object-name>nav-WL-sphere</object-name>
 		<object-name>nav-WR</object-name>
+		<object-name>nav-WR-sphere</object-name>
 		<condition>
-			<equals>
-				<property>/controls/lighting/nav-lights-switch</property>
-				<value>1</value>
-			</equals>
+			<not>
+				<equals>
+					<property>controls/lighting/nav-lights-switch</property>
+					<value>0</value>
+				</equals>
+			</not>
 		</condition>
 	</animation>
 	
