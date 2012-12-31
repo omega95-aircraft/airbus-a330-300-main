@@ -43,8 +43,6 @@ var wp_transit = {
 			setprop("/autopilot/route-manager/input", "@ACTIVATE");
 			
 			setprop("/autopilot/route-manager/input", "@JUMP" ~ me.current_wp);
-			
-			setprop("/autopilot/route-manager/active", 1);
 
 		}
 		
@@ -52,13 +50,11 @@ var wp_transit = {
 		
 			me.current_wp += 1;
 			
-			setprop("/flight-management/current-wp", me.current_wp);
-			
 			var last_wp = getprop("/autopilot/route-manager/route/num") - 1;
 
 			if (getprop("/autopilot/route-manager/route/wp[" ~ me.current_wp ~ "]/id") != nil) {
 	
-				if (me.current_wp == last_wp - 1) {
+				if (me.current_wp == last_wp) {
 			
 					print("--------------------------");
 					
@@ -77,7 +73,6 @@ var wp_transit = {
 					print("--------------------------");
 					print("[FMGC] WP" ~ (me.current_wp - 1) ~ " Reached...");
 					print("[FMGC] TARGET SET: " ~ getprop("/autopilot/route-manager/route/wp[" ~ me.current_wp ~ "]/id"));
-					setprop("/autopilot/route-manager/active", 1);
 				
 				}
 		
@@ -85,6 +80,7 @@ var wp_transit = {
 		
 				print("--------------------------");
 				print("[FMGC] LAST WP REACHED");
+				setprop("/autopilot/route-manager/active", 0);
 				setprop("/flight-management/end-flight", 1);
 		
 			}
