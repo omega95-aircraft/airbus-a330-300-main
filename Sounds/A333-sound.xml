@@ -752,6 +752,55 @@
         <max-dist>100.0</max-dist>
     </copilot3>
     
+    <!-- New Warnings/Sounds -->
+	
+	<gearwarn>
+		<name>Gear warning</name>
+		<path>/Aircraft/A330-300/Sounds/res/gearwarn.wav</path>
+		<mode>looped</mode>
+		<type>avionics</type>
+		<condition>
+			<less-than-equals>
+				<property>position/altitude-agl-ft</property>
+				<value>400</value>
+			</less-than-equals>
+			<less-than-equals>
+				<property>/velocities/vertical-speed-fps</property>
+				<value>-1</value>
+			</less-than-equals>
+			<not>
+				<property>/controls/gear/gear-down</property>
+			</not>
+		</condition>
+		<volume>
+			<property>sim/sound/effects/volume</property>
+		</volume>
+		<reference-dist>10</reference-dist>
+		<max-dist>100</max-dist>
+	</gearwarn>
+	
+	<ap_disc>
+		<name>AP Disconnect warning</name>
+		<path>/Aircraft/A330-300/Sounds/res/ap_disc.wav</path>
+		<mode>once</mode>
+		<type>avionics</type>
+		<condition>
+			<equals>
+				<property>/flight-management/control/ap1-master</property>
+				<value>off</value>
+			</equals>
+			<equals>
+				<property>/flight-management/control/ap2-master</property>
+				<value>off</value>
+			</equals>
+		</condition>
+		<volume>
+			<property>sim/sound/effects/volume</property>
+		</volume>
+		<reference-dist>10</reference-dist>
+		<max-dist>100</max-dist>
+	</ap_disc>
+    
     <ge include="GE-sound.xml" omit-node="y" />
     
     <pw include="PW-sound.xml" omit-node="y" />

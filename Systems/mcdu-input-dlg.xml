@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<PropertyList>
+
+	<name>airbus_mcdu_inpit</name>
+	<layout>vbox</layout>
+
+	<text>
+		<label>Airbus mCDU Input</label>
+	</text>
+
+	<hrule />
+	
+	<group>
+		<layout>hbox</layout>
+
+			<input>
+				<name>mcdu_input</name>
+				<width>100</width>
+				<height>25</height>
+				<format>%s</format>
+				<property>/instrumentation/mcdu/input</property>
+				<live>true</live>
+				<binding>
+					<command>dialog-apply</command>
+					<object-name>mcdu_input</object-name>
+				</binding>
+			</input>
+			
+			<vrule />
+			
+			<button>
+				<legend>Close</legend>
+				<default>true</default>
+				<key>Esc</key>
+				<padding>10</padding>
+				<binding>
+					<command>dialog-apply</command>
+				</binding>
+				<binding>
+					<command>dialog-close</command>
+				</binding>
+			</button>
+			
+	</group>
+	
+
+</PropertyList>

@@ -73,17 +73,23 @@
 	</offsets>
 </model>
 
-<!-- Catering Truck -->
+<!-- Catering Truck - 1st door -->
 
 <model>
 	<name>cater-truck</name>
-	<path>Aircraft/A330-300/Models/Services/Catering/Catering_Loader_Truck_VolvoFM.xml</path>
+	<path>Aircraft/A330-300/Models/Services/Catering/L_T_VolvoFM-4_5m-set.xml</path>
 	<condition>
 		<equals>
 			<property>/services/catering/enable</property>
 			<value>1</value>
 		</equals>
 	</condition>
+	<offsets>
+		<x-m>-20.45</x-m>
+		<y-m>7.28</y-m>
+		<z-m>-5.45</z-m>
+		<heading-deg>100</heading-deg>
+	</offsets>
 </model>
 
 <!-- Baggage Truck -->

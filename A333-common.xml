@@ -187,6 +187,28 @@
 
 		<menubar>
 			<default>
+				<menu n="3">
+					<item n="0">
+		                <label>Autopilot Dialog</label>
+		                <enabled type="bool">false</enabled>
+                        <binding>
+							<command>nasal</command>
+							<script>
+							<!-- Disabled -->
+							</script>
+                        </binding>
+                    </item>
+                    <item n="1">
+		                <label>Route Manager</label>
+		                <enabled type="bool">false</enabled>
+                        <binding>
+							<command>nasal</command>
+							<script>
+								<!-- Disabled -->
+							</script>
+                        </binding>
+                    </item>
+				</menu>
 				<menu n="5">
                     <item n="1">
                     <label>Airbus Radio Stack</label>
@@ -278,6 +300,17 @@
 							<command>nasal</command>
 							<script>
 							 dual_control_tools.copilot_dialog.show(aircraft_dual_control.copilot_type);
+							</script>
+						</binding>
+					</item>
+					<item>
+						<name>mpcopilot</name>
+						<label>mCDU Input Dialog</label>
+						<binding>
+							<command>nasal</command>
+							<script>
+								var mcdu_inp = gui.Dialog.new("sim/gui/dialogs/mcdu_input_dlg/dialog", "Aircraft/A330-300/Systems/mcdu-input-dlg.xml");
+								mcdu_inp.open();
 							</script>
 						</binding>
 					</item>
