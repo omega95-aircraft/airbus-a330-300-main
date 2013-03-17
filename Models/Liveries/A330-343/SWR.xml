@@ -4,8 +4,8 @@
 	<sim>
 		<model>
 			<livery>
-				<name>Scandinavian</name>
-				<a333-texture>Liveries/A330-343/SAS.png</a333-texture>
+				<name>SWISS</name>
+				<a333-texture>Liveries/A330-343/SWR.png</a333-texture>
 			</livery>
 		</model>
 	</sim>
