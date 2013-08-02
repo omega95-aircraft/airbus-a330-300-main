@@ -22,6 +22,18 @@
 				<kd type="double">0</kd>
 				<position-norm type="double">0</position-norm>
 			</pushback>
+			<door n="0">
+				<position-x-m type="float">-19.9</position-x-m>
+				<position-y-m type="float">-2.218</position-y-m>
+				<position-z-m type="float">0.0144</position-z-m>
+				<jetway-hood-deg type="float">10</jetway-hood-deg>
+		   </door>
+		   <door n="1">
+				<position-x-m type="float">-7.85</position-x-m>
+				<position-y-m type="float">-2.9</position-y-m>
+				<position-z-m type="float">0.0259</position-z-m>
+				<jetway-hood-deg type="float">10</jetway-hood-deg>
+		   </door>
 		</model>
 		
 		<multiplay>
@@ -1030,6 +1042,9 @@
 		<dual_control>
 			<file>Aircraft/Generic/DualControl/pilot-dual-control.nas</file>
 		</dual_control>
+		<yoke>
+			<file>Aircraft/A330-300/Nasal/yoke.nas</file>
+		</yoke>
 	</nasal>
 
 	
