@@ -34,6 +34,10 @@
 				<position-z-m type="float">0.0259</position-z-m>
 				<jetway-hood-deg type="float">10</jetway-hood-deg>
 		   </door>
+		   <ramp>
+				<x-m type="float">-19.2</x-m>
+				<class type="string">1</class>
+		   </ramp>
 		</model>
 		
 		<multiplay>
