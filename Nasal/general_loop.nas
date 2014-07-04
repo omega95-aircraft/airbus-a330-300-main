@@ -28,7 +28,7 @@ var target = func(prop, value, step, deadband) {
 
 var general_loop_1 = {
        init : func {
-            me.UPDATE_INTERVAL = 0.02;
+            me.UPDATE_INTERVAL = 0.1;
             me.loopid = 0;
             
             setprop("/gear/tilt/left-tilt-deg", 0);
@@ -37,6 +37,10 @@ var general_loop_1 = {
             me.reset();
     },
     	update : func {
+    	
+    	# Rudder Trim Control
+
+    	setprop("/controls/flight/rudder-trim-deg", getprop("/controls/flight/rudder-trim") * 10);
     	
     	# Engine Fuel Flow Conversion
     	
@@ -48,6 +52,12 @@ var general_loop_1 = {
     		setprop("/flight-management/hold/time-dist-string", getprop("/flight-management/hold/time") ~ "/" ~ getprop("/flight-management/hold/dist"));
     	
     	}
+    	
+    	# Copy Heading Bug to Internal Autopilot Heading Bug
+    	
+    	setprop("/autopilot/settings/heading-bug-deg", getprop("/flight-management/fcu-values/hdg"));
+    	
+    	fuel_jett();
     	
     	tyresmoke();
     	
@@ -63,7 +73,7 @@ var general_loop_1 = {
     		setprop("/controls/lighting/logo", 1);
     	else
     		setprop("/controls/lighting/logo", 0);
-
+    		
 	},
 
         reset : func {

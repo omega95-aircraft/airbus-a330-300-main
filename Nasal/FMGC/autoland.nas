@@ -1,4 +1,5 @@
 setprop("/autoland/phase", "disengaged");
+setprop("/autoland/early-descent", 600);
 
 var autoland = {
 
@@ -52,29 +53,31 @@ var autoland = {
 		
 		}
 		
-		if (nose_wow) {
-			
-			# Exit Autoland
-			
+		if (getprop("/velocities/airspeed-kt") < 80) {
+		
 			setprop("/autoland/active", 0);
+			
+			setprop("/autoland/phase", "disengaged");
 			
 			setprop("/flight-management/control/ap1-master", "off");
 			
 			setprop("/flight-management/control/ap2-master", "off");
+		
+		} elsif (nose_wow) {
 			
 			setprop("/flight-management/control/a-thrust", "off");
 			
-			setprop("/autoland/phase", "disengaged");
+			setprop("/autoland/phase", "rollout");
 			
-			setprop("/autoland/rudder", 0);
+			setprop("/autoland/rudder", 1);
 		
 		} elsif (main_wow) {
 			
 			setprop("/autoland/rudder", 1);
 			
-			setprop("/autoland/phase", "retard");
+			setprop("/autoland/phase", "rollout");
 		
-		} elsif (agl <= 20) {
+		} elsif (agl <= 25) {
 		
 			me.flare2(agl);
 			
@@ -94,7 +97,7 @@ var autoland = {
 		
 		# Early Descent Approach Scenario as Proposed by Geir
 		
-		elsif (agl < 1000) {
+		elsif (agl < getprop("/autoland/early-descent")) {
 		
 			me.early_descent(spd);
 		
@@ -126,7 +129,7 @@ var autoland = {
 	
 	flare1: func(agl) {
 	
-		if (agl <= 40)	
+		if (agl <= 30)
 			setprop("/servo-control/target-vs", -2.5); # -150 fpm
 		else
 			setprop("/servo-control/target-vs", -5); # -300 fpm

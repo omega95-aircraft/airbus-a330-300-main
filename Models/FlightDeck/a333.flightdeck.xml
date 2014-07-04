@@ -4,112 +4,6 @@
 
 	<path>res/fd_complete.ac</path>
 	
-	<!-- ############################ REMBRANDT ############################ -->
-	
-	<!-- Cockpit Lighting -->
-	
-	<!-- Dome Lights -->
-	
-	<animation>
-		<type>light</type>
-		<light-type>point</light-type>
-		<name>PointLightLeft-Remb</name>
-		<object-name>PointLightLeft</object-name>
-		<nopreview/>
-		<position>
-			<x>0.3557</x>
-			<y>-0.2486</y>
-			<z>0.8576</z>
-		</position>
-		<ambient>
-			<r>0.01</r>
-			<g>0.01</g>
-			<b>0.01</b>
-			<a>1.0</a>
-		</ambient>
-		<diffuse>
-			<r>0.1</r>
-			<g>0.1</g>
-			<b>0.1</b>
-			<a>1.0</a>
-		</diffuse>
-		<specular>
-			<r>0.1</r>
-			<g>0.1</g>
-			<b>0.1</b>
-			<a>1.0</a>
-		</specular>
-		<attenuation>
-			<c>1.0</c>
-			<l>0.002</l>
-			<q>0.00005</q>
-		</attenuation>
-		<near-m>0.2</near-m>
-		<far-m>2</far-m>
-	</animation>
-	
-	<animation>
-		<type>light</type>
-		<light-type>point</light-type>
-		<name>PointLightRight-Remb</name>
-		<object-name>PointLightRight</object-name>
-		<nopreview/>
-		<position>
-			<x>0.3557</x>
-			<y>0.2486</y>
-			<z>0.8576</z>
-		</position>
-		<ambient>
-			<r>0.01</r>
-			<g>0.01</g>
-			<b>0.01</b>
-			<a>1.0</a>
-		</ambient>
-		<diffuse>
-			<r>0.1</r>
-			<g>0.1</g>
-			<b>0.1</b>
-			<a>1.0</a>
-		</diffuse>
-		<specular>
-			<r>0.1</r>
-			<g>0.1</g>
-			<b>0.1</b>
-			<a>1.0</a>
-		</specular>
-		<attenuation>
-			<c>1.0</c>
-			<l>0.002</l>
-			<q>0.00005</q>
-		</attenuation>
-		<near-m>0.2</near-m>
-		<far-m>2</far-m>
-	</animation>
-	
-	<animation>
-		<type>select</type>
-		<object-name>PointLightLeft-Remb</object-name>
-		<object-name>PointLightRight-Remb</object-name>
-		<object-name>PointLightLeft</object-name>
-		<object-name>PointLightRight</object-name>
-		<condition>
-			<property>/controls/lighting/cockpit</property>
-		</condition>
-	</animation>
-	
-	<!-- Translucent Objects -->
-	
-	<effect>
-		<inherits-from>Effects/model-transparent</inherits-from>
-		<object-name>trans</object-name>
-		<object-name>fcs_screen</object-name>
-		<object-name>ped-lts</object-name>
-		<object-name>trim_2_lts</object-name>
-		<object-name>thr_quad_lts</object-name>
-	</effect>
-	
-	<!-- ################################################################### -->
-	
 	<!-- Overhead Panel -->
 	
 	<model>
@@ -824,6 +718,12 @@
 		<object-name>vs-text</object-name>
 		<object-name>fpa-text</object-name>
 		<object-name>qnh-inhg</object-name>
+		<object-name>rudder-trim</object-name>
+		<object-name>acp_selmhz</object-name>
+		<object-name>acp_stbymhz</object-name>
+		<object-name>baro.value.inhg</object-name>
+		<object-name>baro.value.hpa</object-name>
+		<object-name>baro.value.std</object-name>
 		<condition>
 			<greater-than-equals>
 				<property>/systems/electrical/outputs/efis</property>
@@ -937,6 +837,12 @@
 		<object-name>vs-text</object-name>
 		<object-name>fpa-text</object-name>
 		<object-name>qnh-inhg</object-name>
+		<object-name>rudder-trim</object-name>
+		<object-name>acp_stbymhz</object-name>
+		<object-name>acp_selmhz</object-name>
+		<object-name>baro.value.inhg</object-name>
+		<object-name>baro.value.hpa</object-name>
+		<object-name>baro.value.std</object-name>
 		<diffuse>
 			<red>0.89</red>
 			<green>0.37</green>
@@ -976,7 +882,7 @@
 		<format type="string">%3.0f</format>
 		<property>/flight-management/fcu-values/ias</property>
 		<truncate type="bool">false</truncate>
-		<font type="string">helvetica_bold.txf</font>
+		<font type="string">led.txf</font>
 		<draw-text type="bool">true</draw-text>
 		<draw-alignment type="bool">false</draw-alignment>
 		<draw-boundingbox type="bool">false</draw-boundingbox>
@@ -1002,7 +908,7 @@
 		<format type="string">%1.2f</format>
 		<property>/flight-management/fcu-values/mach</property>
 		<truncate type="bool">false</truncate>
-		<font type="string">helvetica_bold.txf</font>
+		<font type="string">led.txf</font>
 		<draw-text type="bool">true</draw-text>
 		<draw-alignment type="bool">false</draw-alignment>
 		<draw-boundingbox type="bool">false</draw-boundingbox>
@@ -1028,7 +934,7 @@
 		<format type="string">%s</format>
 		<property>/flight-management/fcu-values/hdg-disp</property>
 		<truncate type="bool">false</truncate>
-		<font type="string">helvetica_bold.txf</font>
+		<font type="string">led.txf</font>
 		<draw-text type="bool">true</draw-text>
 		<draw-alignment type="bool">false</draw-alignment>
 		<draw-boundingbox type="bool">false</draw-boundingbox>
@@ -1054,7 +960,7 @@
 		<format type="string">%5.0f</format>
 		<property>/flight-management/fcu-values/alt</property>
 		<truncate type="bool">false</truncate>
-		<font type="string">helvetica_bold.txf</font>
+		<font type="string">led.txf</font>
 		<draw-text type="bool">true</draw-text>
 		<draw-alignment type="bool">false</draw-alignment>
 		<draw-boundingbox type="bool">false</draw-boundingbox>
@@ -1080,7 +986,7 @@
 		<format type="string">%4.0f</format>
 		<property>/flight-management/fcu-values/vs</property>
 		<truncate type="bool">false</truncate>
-		<font type="string">helvetica_bold.txf</font>
+		<font type="string">led.txf</font>
 		<draw-text type="bool">true</draw-text>
 		<draw-alignment type="bool">false</draw-alignment>
 		<draw-boundingbox type="bool">false</draw-boundingbox>
@@ -1106,7 +1012,7 @@
 		<format type="string">%2.0f</format>
 		<property>/flight-management/fcu-values/fpa</property>
 		<truncate type="bool">false</truncate>
-		<font type="string">helvetica_bold.txf</font>
+		<font type="string">led.txf</font>
 		<draw-text type="bool">true</draw-text>
 		<draw-alignment type="bool">false</draw-alignment>
 		<draw-boundingbox type="bool">false</draw-boundingbox>
@@ -1259,131 +1165,7 @@
 		</axis>
 	</animation>
 	
-	<!-- QNH -->
 	
-	<!-- OSGText -->
-	
-	<text>
-		<name>qnh-inhg</name>
-		<offsets>
-			<x-m>-0.4856</x-m>
-			<y-m>-0.2589</y-m>
-			<z-m>0.1666</z-m>
-			<heading-deg>90</heading-deg>
-			<roll-deg>76</roll-deg>
-		</offsets>
-		<alignment>center-center</alignment>
-		<axis-alignment>xy-plane</axis-alignment>
-		<type type="string">number-value</type>
-		<format type="string">%2.2f</format>
-		<property>/instrumentation/altimeter/setting-inhg</property>
-		<truncate type="bool">false</truncate>
-		<font type="string">helvetica_bold.txf</font>
-		<draw-text type="bool">true</draw-text>
-		<draw-alignment type="bool">false</draw-alignment>
-		<draw-boundingbox type="bool">false</draw-boundingbox>
-		<character-size>0.009</character-size>
-		<font-resolution>
-			<width type="int">32</width>
-			<height type="int">32</height>
-		</font-resolution>
-	</text>
-	
-	<text>
-		<name>qnh-inhg</name>
-		<offsets>
-			<x-m>-0.4856</x-m>
-			<y-m>0.2589</y-m>
-			<z-m>0.1666</z-m>
-			<heading-deg>90</heading-deg>
-			<roll-deg>76</roll-deg>
-		</offsets>
-		<alignment>center-center</alignment>
-		<axis-alignment>xy-plane</axis-alignment>
-		<type type="string">number-value</type>
-		<format type="string">%2.2f</format>
-		<property>/instrumentation/altimeter/setting-inhg</property>
-		<truncate type="bool">false</truncate>
-		<font type="string">helvetica_bold.txf</font>
-		<draw-text type="bool">true</draw-text>
-		<draw-alignment type="bool">false</draw-alignment>
-		<draw-boundingbox type="bool">false</draw-boundingbox>
-		<character-size>0.009</character-size>
-		<font-resolution>
-			<width type="int">32</width>
-			<height type="int">32</height>
-		</font-resolution>
-	</text>
-	
-	<animation>
-		<type>pick</type>
-		<object-name>qnh-0.01</object-name>
-		<action>
-			<button>0</button>
-			<button>3</button>
-			<repeatable type="bool">true</repeatable>
-			<binding>
-				<command>nasal</command>
-				<script>
-				
-					var qnh = getprop("/instrumentation/altimeter/setting-inhg");
-					
-					setprop("/instrumentation/altimeter/setting-inhg", qnh + 0.01);
-					
-				</script>
-			</binding>
-		</action>
-		<action>
-			<button>1</button>
-			<button>4</button>
-			<repeatable type="bool">true</repeatable>
-			<binding>
-				<command>nasal</command>
-				<script>
-					
-					var qnh = getprop("/instrumentation/altimeter/setting-inhg");
-					
-					setprop("/instrumentation/altimeter/setting-inhg", qnh - 0.01);
-					
-				</script>
-			</binding>
-		</action>
-	</animation>
-	
-	<animation>
-		<type>pick</type>
-		<object-name>qnh</object-name>
-		<action>
-			<button>0</button>
-			<button>3</button>
-			<repeatable type="bool">true</repeatable>
-			<binding>
-				<command>nasal</command>
-				<script>
-				
-					var qnh = getprop("/instrumentation/altimeter/setting-inhg");
-					
-					setprop("/instrumentation/altimeter/setting-inhg", qnh + 0.1);
-					
-				</script>
-			</binding>
-		</action>
-		<action>
-			<button>1</button>
-			<button>4</button>
-			<repeatable type="bool">true</repeatable>
-			<binding>
-				<command>nasal</command>
-				<script>
-					
-					var qnh = getprop("/instrumentation/altimeter/setting-inhg");
-					
-					setprop("/instrumentation/altimeter/setting-inhg", qnh - 0.1);
-					
-				</script>
-			</binding>
-		</action>
-	</animation>
 	
 	<animation>
 		<type>rotate</type>
@@ -1601,7 +1383,7 @@
             <button>0</button>
             <binding>
                 <command>property-toggle</command>
-                <property>controls/engines/engine[0]/cutoff</property>
+                <property>controls/engines/engine[0]/cutoff-switch</property>
             </binding>
         </action>
     </animation>
@@ -1613,7 +1395,7 @@
             <button>0</button>
             <binding>
                 <command>property-toggle</command>
-                <property>controls/engines/engine[1]/cutoff</property>
+                <property>controls/engines/engine[1]/cutoff-switch</property>
             </binding>
         </action>
     </animation>
@@ -2304,39 +2086,37 @@
 			<binding>
 				<command>nasal</command>
 				<script>
+				   var nd_disp = getprop("/instrumentation/efis/nd/display-mode");
+				   
+				   if (nd_disp == "ILS")
+					  setprop("/instrumentation/nd/y-center", 0.5);
+				   elsif (nd_disp == "VOR")
+					  setprop("/instrumentation/nd/y-center", 0.5);
+				   elsif (nd_disp == "NAV")
+					  setprop("/instrumentation/nd/y-center", 0.5);
+				   elsif (nd_disp == "ARC")
+					  setprop("/instrumentation/nd/y-center", 0.25);
+				   else
+					  setprop("/instrumentation/nd/y-center", 0.5);
+					  
+				</script>
+			 </binding>
+			<binding>
+				<command>nasal</command>
+				<script>
 					var nd_disp = getprop("/instrumentation/efis/nd/display-mode");
 					
-					if (nd_disp == "ILS") {
+					if (nd_disp == "ILS")
 						setprop("/instrumentation/efis/nd/display-mode-num", 0);
-					
-						setprop("/instrumentation/nd/y-center", 0.5);
-						setprop("/instrumentation/nd/aircraft-heading-up", 1);
-					
-					} elsif (nd_disp == "VOR") {
+					elsif (nd_disp == "VOR")
 						setprop("/instrumentation/efis/nd/display-mode-num", 1);
-						
-						setprop("/instrumentation/nd/y-center", 0.5);
-						setprop("/instrumentation/nd/aircraft-heading-up", 1);
-						
-					} elsif (nd_disp == "NAV") {
+					elsif (nd_disp == "NAV")
 						setprop("/instrumentation/efis/nd/display-mode-num", 2);
-						
-						setprop("/instrumentation/nd/y-center", 0.5);
-						setprop("/instrumentation/nd/aircraft-heading-up", 1);
-						
-					} elsif (nd_disp == "ARC") {
+					elsif (nd_disp == "ARC")
 						setprop("/instrumentation/efis/nd/display-mode-num", 3);
-						
-						setprop("/instrumentation/nd/y-center", 0.25);
-						setprop("/instrumentation/nd/aircraft-heading-up", 1);
-						
-					} else {
+					else
 						setprop("/instrumentation/efis/nd/display-mode-num", 4);
 						
-						setprop("/instrumentation/nd/y-center", 0.5);
-						setprop("/instrumentation/nd/aircraft-heading-up", 0);
-						
-					}
 				</script>
 			</binding>
 		</action>
@@ -2849,33 +2629,771 @@
 		</axis>
 	</animation>
 	
-	<!-- Terrain on ND -->
+	<!-- Rudder Trim -->
+
+<animation>
+	<type>pick</type>
+	<object-name>RudderTrim</object-name>
+	<action>
+		<button>3</button>
+		<button>0</button>
+		<repeatable type="bool">true</repeatable>
+		<binding>
+			<command>nasal</command>
+			<script>
+				var TrimVal = getprop("/controls/flight/rudder-trim");
+				setprop("/controls/flight/rudder-trim", TrimVal + 0.01);
+				setprop("/controls/switches/rudder-trim", 1);
+			</script>
+		</binding>
+		<mod-up>
+			<binding>
+				<command>nasal</command>
+				<script>
+					setprop("/controls/switches/rudder-trim", 0);
+				</script>
+			</binding>
+		</mod-up>
+	</action>
+	<action>
+		<button>4</button>
+		<button>1</button>
+		<repeatable type="bool">true</repeatable>
+		<binding>
+			<command>nasal</command>
+			<script>
+				var TrimVal = getprop("/controls/flight/rudder-trim");
+				setprop("/controls/flight/rudder-trim", TrimVal - 0.01);
+				setprop("/controls/switches/rudder-trim", -1);
+			</script>
+		</binding>
+		<mod-up>
+			<binding>
+				<command>nasal</command>
+				<script>
+					setprop("/controls/switches/rudder-trim", 0);
+				</script>
+			</binding>
+		</mod-up>
+	</action>
+</animation>
+
+<animation>
+	<type>pick</type>
+	<object-name>ResetRudderTrim</object-name>
+	<action>
+		<button>0</button>
+		<repeatable type="bool">false</repeatable>
+		<binding>
+			<command>nasal</command>
+			<script>
+				setprop("/controls/flight/rudder-trim", 0);
+			</script>
+		</binding>
+	</action>
+</animation>
+
+<animation>
+	<type>rotate</type>
+	<object-name>RudderTrim</object-name>
+	<property>/controls/switches/rudder-trim</property>
+	<factor>-30</factor>
+	<center>
+		<x-m>0.0380</x-m>
+		<y-m>0.0104</y-m>
+		<z-m>0</z-m>
+	</center>
+	<axis>
+		<x>0</x>
+		<y>0</y>
+		<z>1</z>
+	</axis>
+</animation>
+
+<text>
+	<name>rudder-trim</name>
+	<offsets>
+		<x-m>0.0211</x-m>
+		<y-m>-0.0207</y-m>
+		<z-m>-0.3855</z-m>
+		<heading-deg>90</heading-deg>
+		<roll-deg>0</roll-deg>
+	</offsets>
+	<alignment>center-center</alignment>
+	<axis-alignment>xy-plane</axis-alignment>
+	<type type="string">number-value</type>
+	<format type="string">%2.1f</format>
+	<property>/controls/flight/rudder-trim-deg</property>
+	<truncate type="bool">false</truncate>
+	<font type="string">helvetica_bold.txf</font>
+	<draw-text type="bool">true</draw-text>
+	<draw-alignment type="bool">false</draw-alignment>
+	<draw-boundingbox type="bool">false</draw-boundingbox>
+	<character-size>0.009</character-size>
+	<font-resolution>
+		<width type="int">32</width>
+		<height type="int">32</height>
+	</font-resolution>
+</text>
+
+<animation>
+	<type>textranslate</type>
+	<object-name>master-warning</object-name>
+	<property>/warnings/master-warning-light</property>
+	<factor>-0.25</factor>
+	<axis>
+		<x>1</x>
+		<y>0</y>
+		<z>0</z>
+	</axis>
+</animation>
+
+<animation>
+	<name>Master Warning Illumination</name>
+	<type>material</type>
+	<object-name>master-warning</object-name>
+	<diffuse>
+		<red>1</red>
+		<green>1</green>
+		<blue>1</blue>
+	</diffuse>
+	<ambient>
+		<red>1</red>
+		<green>1</green>
+		<blue>1</blue>
+	</ambient>
+	<specular>
+		<red>0</red>
+		<green>0</green>
+		<blue>0</blue>
+	</specular>
+	<emission>
+		<red>1</red>
+		<green>1</green>
+		<blue>1</blue>
+	</emission>
+	<condition>
+		<property>/warnings/master-warning-state</property>
+	</condition>
+</animation>
+
+<animation>
+	<type>textranslate</type>
+	<object-name>master-caution</object-name>
+	<property>/warnings/master-caution-light</property>
+	<condition>
+		<greater-than-equals>
+			<property>/systems/electrical/outputs/efis</property>
+			<value>9</value>
+		</greater-than-equals>
+	</condition>
+	<factor>-0.25</factor>
+	<axis>
+		<x>1</x>
+		<y>0</y>
+		<z>0</z>
+	</axis>
+</animation>
+
+<animation>
+	<name>Master Caution Illumination</name>
+	<type>material</type>
+	<object-name>master-caution</object-name>
+	<diffuse>
+		<red>1</red>
+		<green>1</green>
+		<blue>1</blue>
+	</diffuse>
+	<ambient>
+		<red>1</red>
+		<green>1</green>
+		<blue>1</blue>
+	</ambient>
+	<specular>
+		<red>0</red>
+		<green>0</green>
+		<blue>0</blue>
+	</specular>
+	<emission>
+		<red>1</red>
+		<green>1</green>
+		<blue>1</blue>
+	</emission>
+	<condition>
+		<property>/warnings/master-caution-state</property>
+		<greater-than-equals>
+			<property>/systems/electrical/outputs/efis</property>
+			<value>9</value>
+		</greater-than-equals>
+	</condition>
+</animation>
+
+<animation>
+	<type>textranslate</type>
+	<object-name>autoland-light</object-name>
+	<property>/autoland/active</property>
+	<factor>-0.25</factor>
+	<condition>
+		<greater-than-equals>
+			<property>/systems/electrical/outputs/efis</property>
+			<value>9</value>
+		</greater-than-equals>
+	</condition>
+	<axis>
+		<x>1</x>
+		<y>0</y>
+		<z>0</z>
+	</axis>
+</animation>
+
+<animation>
+	<name>Autoland Illumination</name>
+	<type>material</type>
+	<object-name>autoland-light</object-name>
+	<diffuse>
+		<red>1</red>
+		<green>1</green>
+		<blue>1</blue>
+	</diffuse>
+	<ambient>
+		<red>1</red>
+		<green>1</green>
+		<blue>1</blue>
+	</ambient>
+	<specular>
+		<red>0</red>
+		<green>0</green>
+		<blue>0</blue>
+	</specular>
+	<emission>
+		<red>0.5</red>
+		<green>0.5</green>
+		<blue>0.5</blue>
+	</emission>
+	<condition>
+		<property>/autoland/active</property>
+		<greater-than-equals>
+			<property>/systems/electrical/outputs/efis</property>
+			<value>9</value>
+		</greater-than-equals>
+	</condition>
+</animation>
+
+<animation>
+	<type>pick</type>
+	<object-name>master-warning</object-name>
+	<action>
+		<button>0</button>
+		<binding>
+			<command>nasal</command>
+			<script>
+				setprop("/warnings/master-warning-light", 0);
+				setprop("/warnings/master-warning-state", 0);
+			</script>
+		</binding>
+	</action>
+</animation>
+
+<animation>
+	<type>pick</type>
+	<object-name>master-caution</object-name>
+	<action>
+		<button>0</button>
+		<binding>
+			<command>nasal</command>
+			<script>
+				setprop("/warnings/master-caution-light", 0);
+				setprop("/warnings/master-caution-state", 0);
+			</script>
+		</binding>
+	</action>
+</animation>
+
+<animation>
+	<type>pick</type>
+	<object-name>ecam.clr</object-name>
+	<action>
+		<button>0</button>
+		<binding>
+			<command>nasal</command>
+			<script>
+				warnings.warning_system.clr();
+			</script>
+		</binding>
+	</action>
+</animation>
+
+<animation>
+	<type>pick</type>
+	<object-name>ecam.rcl</object-name>
+	<action>
+		<button>0</button>
+		<binding>
+			<command>nasal</command>
+			<script>
+				warnings.warning_system.rcl();
+			</script>
+		</binding>
+	</action>
+</animation>
+
+<!-- Audio Control Panel -->
+
+	<!-- select Stby frequency-->
+	<animation>
+        <type>pick</type>
+        <object-name>comm_freq_select</object-name>
+        <action>
+            <button>3</button>
+            <repeatable>true</repeatable>
+            <binding>
+                <command>property-adjust</command>
+                <property>instrumentation/comm/frequencies/standby-mhz</property>
+				<step>1</step>
+				<min>118.000</min>
+				<max>136.000</max>
+            </binding>           
+        </action>
+    </animation>
 	
 	<animation>
+        <type>pick</type>
+        <object-name>comm_freq_select</object-name>
+        <action>
+            <button>4</button>
+            <repeatable>true</repeatable>
+            <binding>
+                <command>property-adjust</command>
+                <property>instrumentation/comm/frequencies/standby-mhz</property>
+				<step>-1</step>
+				<min>118.000</min>
+				<max>136.000</max>
+            </binding>            
+        </action>
+    </animation>
+	
+	<!-- small frequency selector (selects values behind decimal point -->
+	
+	<animation>
+        <type>pick</type>
+        <object-name>comm_freq_select2</object-name>
+        <action>
+            <button>3</button>
+            <repeatable>true</repeatable>
+            <binding>
+                <command>property-adjust</command>
+                <property>instrumentation/comm/frequencies/standby-mhz</property>
+				<step>0.025</step>
+				<min>118.000</min>
+				<max>136.000</max>
+            </binding>            
+        </action>
+    </animation>
+	
+	<animation>
+        <type>pick</type>
+        <object-name>comm_freq_select2</object-name>
+        <action>
+            <button>4</button>
+            <repeatable>true</repeatable>
+            <binding>
+                <command>property-adjust</command>
+                <property>instrumentation/comm/frequencies/standby-mhz</property>
+				<step>-0.025</step>
+				<min>118.000</min>
+				<max>136.000</max>
+            </binding>           
+        </action>
+    </animation>
+	
+	
+	<!-- switch between active and stby frequency-->
+	
+	<animation>
+        <type>pick</type>
+        <object-name>comm_switch</object-name>
+        <action>
+            <button>0</button>
+            <repeatable>true</repeatable>
+           <binding>
+			 <command>property-swap</command>
+				 <property>/instrumentation/comm/frequencies/selected-mhz</property>
+				 <property>/instrumentation/comm/frequencies/standby-mhz</property>
+			</binding>            
+        </action>
+    </animation>
+	
+	<!-- AudioControlPanel text -->
+	
+	<text>
+		<name>acp_stbymhz</name>
+		<offsets>
+			<x-m>-0.300</x-m>
+			<y-m>-0.134</y-m>
+			<z-m>-0.338</z-m>
+			<heading-deg>90</heading-deg>
+			<roll-deg>0</roll-deg>
+		</offsets>
+		<alignment>center-center</alignment>
+		<axis-alignment>xy-plane</axis-alignment>
+		<type type="string">number-value</type>
+		<format type="string">%3.3f</format>
+		<property>/instrumentation/comm/frequencies/standby-mhz</property>
+		<truncate type="bool">false</truncate>
+		<font type="string">led.txf</font>
+		<draw-text type="bool">true</draw-text>
+		<draw-alignment type="bool">false</draw-alignment>
+		<draw-boundingbox type="bool">false</draw-boundingbox>
+		<character-size>0.008</character-size>
+		<font-resolution>
+			<width type="int">32</width>
+			<height type="int">32</height>
+		</font-resolution>
+	</text>
+
+	<text>
+		<name>acp_selmhz</name>
+		<offsets>
+			<x-m>-0.300</x-m>
+			<y-m>-0.1955</y-m>
+			<z-m>-0.338</z-m>
+			<heading-deg>90</heading-deg>
+			<roll-deg>0</roll-deg>
+		</offsets>
+		<alignment>center-center</alignment>
+		<axis-alignment>xy-plane</axis-alignment>
+		<type type="string">number-value</type>
+		<format type="string">%3.3f</format>
+		<property>/instrumentation/comm/frequencies/selected-mhz</property>
+		<truncate type="bool">false</truncate>
+		<font type="string">led.txf</font>
+		<draw-text type="bool">true</draw-text>
+		<draw-alignment type="bool">false</draw-alignment>
+		<draw-boundingbox type="bool">false</draw-boundingbox>
+		<character-size>0.008</character-size>
+		<font-resolution>
+			<width type="int">32</width>
+			<height type="int">32</height>
+		</font-resolution>
+	</text>
+	
+	<!-- Baro -->
+
+	<!-- switch between inhg or hpa -->
+	
+<animation>
+    <type>pick</type>
+    <object-name>baro_select</object-name>
+    <action>
+        <button>0</button>
+			<binding>
+			  <command>property-toggle</command>
+			  <property>/instrumentation/efis/baro-mode</property>
+			</binding> 
+      </action>
+  </animation>
+  
+  <animation>
+		<type>rotate</type>
+		<object-name>baro_select</object-name>
+		<property>/instrumentation/efis/baro-mode</property>
+		<factor>110</factor>
+		<axis>
+			<x1-m>-0.474</x1-m>
+			<y1-m>-0.258</y1-m>
+			<z1-m>0.141</z1-m>
+			<x2-m>-0.506</x2-m>
+			<y2-m>-0.258</y2-m>
+			<z2-m>0.127</z2-m>
+		</axis>
+	</animation>
+
+  <!-- Adjust altimeter - not in STD mode -->	
+  <animation>
+    
+    <type>pick</type>
+    <object-name>qnh_inc_dec</object-name>
+    <action>
+      <button>3</button>
+      <binding>
+	  <condition>
+      <equals>
+        <property>/instrumentation/efis/baro-std-mode</property>
+        <value>0</value>
+      </equals>
+    </condition>
+       <command>property-adjust</command>
+	<property>/instrumentation/altimeter/setting-inhg</property>
+	<step>0.01</step>
+	<max>40.00</max>
+	<min>0.00</min>
+      </binding>
+    </action>
+    <action>
+      <button>4</button>
+      <binding>
+	  <condition>
+      <equals>
+        <property>/instrumentation/efis/baro-std-mode</property>
+        <value>0</value>
+      </equals>
+    </condition>
+        <command>property-adjust</command>
+	<property>/instrumentation/altimeter/setting-inhg</property>
+	<step>-0.01</step>
+	<max>40.00</max>
+	<min>0.00</min>
+      </binding>
+    </action>
+  </animation>
+  
+  <animation>
+    <type>pick</type>
+    <object-name>qnh_inc_dec</object-name>
+    <action>
+      <button>0</button>
+      <binding>
+        <command>property-toggle</command>
+        <property>/instrumentation/efis/baro-std-mode</property>
+      </binding>
+	  <binding>
+				<condition>
+					<property>/instrumentation/efis/baro-std-mode</property>
+					<value>1</value>
+				</condition>
+                <command>property-assign</command>
+                <property>instrumentation/efis/inhg-previous</property>
+                <property>instrumentation/altimeter/setting-inhg</property>
+            </binding>
+			<binding>
+				<condition>
+					<property>instrumentation/efis/baro-std-mode</property>
+				</condition>
+                <command>property-assign</command>
+				<property>instrumentation/altimeter/setting-inhg</property>
+				<value>29.92</value>
+            </binding>
+			<binding>
+				<condition>
+					<not><property>instrumentation/efis/baro-std-mode</property>
+					<value>1</value>
+					</not>
+				</condition>
+                <command>property-assign</command>
+                <property>instrumentation/altimeter/setting-inhg</property>
+                <property>instrumentation/efis/inhg-previous</property>
+            </binding>
+    </action>
+  </animation>
+
+  <text>
+    <name>baro.value.hpa</name>
+		<offsets>
+			<x-m>-0.4856</x-m>
+			<y-m>-0.2589</y-m>
+			<z-m>0.1666</z-m>
+			<heading-deg>90</heading-deg>
+			<roll-deg>76</roll-deg>
+		</offsets>
+		<alignment>center-center</alignment>
+		<axis-alignment>xy-plane</axis-alignment>
+		<type type="string">number-value</type>
+		<format type="string">%4.0f</format>
+		<property>/instrumentation/altimeter/setting-hpa</property>
+		<truncate type="bool">false</truncate>
+		<font type="string">led.txf</font>
+		<draw-text type="bool">true</draw-text>
+		<draw-alignment type="bool">false</draw-alignment>
+		<draw-boundingbox type="bool">false</draw-boundingbox>
+		<character-size>0.009</character-size>
+		<font-resolution>
+			<width type="int">32</width>
+			<height type="int">32</height>
+		</font-resolution>
+  </text>
+  
+    <text>
+    <name>baro.value.inhg</name>
+	<offsets>
+			<x-m>-0.4856</x-m>
+			<y-m>-0.2589</y-m>
+			<z-m>0.1666</z-m>
+			<heading-deg>90</heading-deg>
+			<roll-deg>76</roll-deg>
+		</offsets>
+		<alignment>center-center</alignment>
+		<axis-alignment>xy-plane</axis-alignment>
+		<type type="string">number-value</type>
+		<format type="string">%2.2f</format>
+		<property>/instrumentation/altimeter/setting-inhg</property>
+		<truncate type="bool">false</truncate>
+		<font type="string">led.txf</font>
+		<draw-text type="bool">true</draw-text>
+		<draw-alignment type="bool">false</draw-alignment>
+		<draw-boundingbox type="bool">false</draw-boundingbox>
+		<character-size>0.009</character-size>
+		<font-resolution>
+			<width type="int">32</width>
+			<height type="int">32</height>
+		</font-resolution>
+  </text>
+  
+  <text>
+	<name>baro.value.std</name>
+    <offsets>
+			<x-m>-0.4856</x-m>
+			<y-m>-0.2589</y-m>
+			<z-m>0.1666</z-m>
+			<heading-deg>90</heading-deg>
+			<roll-deg>76</roll-deg>
+		</offsets>
+		<alignment>center-center</alignment>
+		<axis-alignment>xy-plane</axis-alignment>
+	    <type>literal</type>
+    <text type="string">Std</text>
+    <font>led.txf</font>
+    <character-size type="double">0.009</character-size>
+	<font-resolution>
+			<width type="int">32</width>
+			<height type="int">32</height>
+		</font-resolution>
+  </text>
+  
+  <!-- First Officer-->
+  
+   <text>
+    <name>baro.value.hpa</name>
+		<offsets>
+			<x-m>-0.4856</x-m>
+			<y-m>0.2589</y-m>
+			<z-m>0.1666</z-m>
+			<heading-deg>90</heading-deg>
+			<roll-deg>76</roll-deg>
+		</offsets>
+		<alignment>center-center</alignment>
+		<axis-alignment>xy-plane</axis-alignment>
+		<type type="string">number-value</type>
+		<format type="string">%4.0f</format>
+		<property>/instrumentation/altimeter/setting-hpa</property>
+		<truncate type="bool">false</truncate>
+		<font type="string">led.txf</font>
+		<draw-text type="bool">true</draw-text>
+		<draw-alignment type="bool">false</draw-alignment>
+		<draw-boundingbox type="bool">false</draw-boundingbox>
+		<character-size>0.009</character-size>
+		<font-resolution>
+			<width type="int">32</width>
+			<height type="int">32</height>
+		</font-resolution>
+  </text>
+  
+   <text>
+    <name>baro.value.inhg</name>
+	<offsets>
+			<x-m>-0.4856</x-m>
+			<y-m>0.2589</y-m>
+			<z-m>0.1666</z-m>
+			<heading-deg>90</heading-deg>
+			<roll-deg>76</roll-deg>
+		</offsets>
+		<alignment>center-center</alignment>
+		<axis-alignment>xy-plane</axis-alignment>
+		<type type="string">number-value</type>
+		<format type="string">%2.2f</format>
+		<property>/instrumentation/altimeter/setting-inhg</property>
+		<truncate type="bool">false</truncate>
+		<font type="string">led.txf</font>
+		<draw-text type="bool">true</draw-text>
+		<draw-alignment type="bool">false</draw-alignment>
+		<draw-boundingbox type="bool">false</draw-boundingbox>
+		<character-size>0.009</character-size>
+		<font-resolution>
+			<width type="int">32</width>
+			<height type="int">32</height>
+		</font-resolution>
+  </text>
+  
+  <text>
+	<name>baro.value.std</name>
+    <offsets>
+			<x-m>-0.4856</x-m>
+			<y-m>0.2589</y-m>
+			<z-m>0.1666</z-m>
+			<heading-deg>90</heading-deg>
+			<roll-deg>76</roll-deg>
+		</offsets>
+		<alignment>center-center</alignment>
+		<axis-alignment>xy-plane</axis-alignment>
+	    <type>literal</type>
+    <text type="string">Std</text>
+    <font>led.txf</font>
+    <character-size type="double">0.009</character-size>
+	<font-resolution>
+			<width type="int">32</width>
+			<height type="int">32</height>
+		</font-resolution>
+  </text>
+  
+  <animation>
+    <type>select</type>
+    <object-name>baro.value.hpa</object-name>
+    <condition>
+      <and>
+        <equals>
+          <property>/instrumentation/efis/baro-mode</property>
+          <value>1</value>
+        </equals>
+        <equals>
+          <property>/instrumentation/efis/baro-std-mode</property>
+          <value>0</value>
+        </equals>
+      </and>
+    </condition>
+  </animation>
+  
+  <animation>
+    <type>select</type>
+    <object-name>baro.value.inhg</object-name>
+    <condition>
+      <and>
+        <equals>
+          <property>/instrumentation/efis/baro-mode</property>
+          <value>0</value>
+        </equals>
+        <equals>
+          <property>/instrumentation/efis/baro-std-mode</property>
+          <value>0</value>
+        </equals>
+      </and>
+    </condition>
+  </animation>
+  
+  <animation>
+    <type>select</type>
+    <object-name>baro.value.std</object-name>
+    <condition>
+        <equals>
+          <property>/instrumentation/efis/baro-std-mode</property>
+          <value>1</value>
+        </equals>
+    </condition>
+  </animation>
+  
+  <!-- Parking Brake animation -->
+  
+	<animation>
 		<type>pick</type>
-		<object-name>terr_on_nd</object-name>
+		<object-name>ParkBrk</object-name>
 		<action>
 			<button>0</button>
 			<repeatable type="bool">false</repeatable>
 			<binding>
-				<command>property-cycle</command>
-				<property>/instrumentation/efis/nd/terrain-on-nd</property>
-				<value>0</value>
-				<value>1</value>
+				<command>property-toggle</command>
+				<property>/controls/gear/brake-parking</property>
 			</binding>
 		</action>
 	</animation>
-	
-	<animation>
-		<type>textranslate</type>
-		<object-name>terr_on_nd</object-name>
-		<property>/instrumentation/efis/nd/terrain-on-nd</property>
-		<factor>0.125</factor>
-		<axis>
-			<x>0</x>
-			<y>-1</y>
-			<z>0</z>
-		</axis>
-	</animation>
+
+
 
 </PropertyList>
