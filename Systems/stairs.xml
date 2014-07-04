@@ -34,7 +34,6 @@
 		   						<pref-height>20</pref-height>
 				    <property>/services/stairs/paint-end</property>
 				    <editable>true</editable>
-				    <value>merlion.png</value>
 				    <value>white-grey.png</value>
 				    <value>blue-shade.png</value>
 				    <value>blue-stripes.png</value>

@@ -6,11 +6,6 @@
 
 	<path>res/pfd-3d.ac</path>
 	
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
->>>>>>> rembrandt
 	<!-- Speed Trend Indicator -->
 	
 	<animation>
@@ -40,10 +35,6 @@
         </interpolation>
     </animation>
 	
-<<<<<<< HEAD
->>>>>>> 3e25c56... Brought it up to date
-=======
->>>>>>> rembrandt
 	<!-- AP Indicators Select -->
 	
 	<!-- AUTO-THROTTLE SECTION -->

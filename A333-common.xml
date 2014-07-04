@@ -22,22 +22,6 @@
 				<kd type="double">0</kd>
 				<position-norm type="double">0</position-norm>
 			</pushback>
-			<door n="0">
-				<position-x-m type="float">-19.9</position-x-m>
-				<position-y-m type="float">-2.218</position-y-m>
-				<position-z-m type="float">0.0144</position-z-m>
-				<jetway-hood-deg type="float">10</jetway-hood-deg>
-		   </door>
-		   <door n="1">
-				<position-x-m type="float">-7.85</position-x-m>
-				<position-y-m type="float">-2.9</position-y-m>
-				<position-z-m type="float">0.0259</position-z-m>
-				<jetway-hood-deg type="float">10</jetway-hood-deg>
-		   </door>
-		   <ramp>
-				<x-m type="float">-19.2</x-m>
-				<class type="string">1</class>
-		   </ramp>
 		</model>
 		
 		<multiplay>
@@ -208,28 +192,6 @@
 
 		<menubar>
 			<default>
-				<menu n="3">
-					<item n="0">
-		                <label>Autopilot Dialog</label>
-		                <enabled type="bool">false</enabled>
-                        <binding>
-							<command>nasal</command>
-							<script>
-							<!-- Disabled -->
-							</script>
-                        </binding>
-                    </item>
-                    <item n="1">
-		                <label>Route Manager</label>
-		                <enabled type="bool">false</enabled>
-                        <binding>
-							<command>nasal</command>
-							<script>
-								<!-- Disabled -->
-							</script>
-                        </binding>
-                    </item>
-				</menu>
 				<menu n="5">
                     <item n="1">
                     <label>Airbus Radio Stack</label>
@@ -331,83 +293,6 @@
 							<command>nasal</command>
 							<script>
 							 dual_control_tools.copilot_dialog.show(aircraft_dual_control.copilot_type);
-							</script>
-						</binding>
-					</item>
-					<item>
-						<name>mpcopilot</name>
-						<label>mCDU Input Dialog</label>
-						<binding>
-							<command>nasal</command>
-							<script>
-								var mcdu_inp = gui.Dialog.new("sim/gui/dialogs/mcdu_input_dlg/dialog", "Aircraft/A330-300/Systems/mcdu-input-dlg.xml");
-								mcdu_inp.open();
-							</script>
-						</binding>
-					</item>
-				</menu>
-				<menu n="101">
-					<label>Reset Systems</label>
-					<item>
-						<name>fmgcreset</name>
-						<label>Reset FMGC Loop</label>
-						<binding>
-							<command>nasal</command>
-							<script>
-								fmgc.fmgc_loop.init();
-							</script>
-						</binding>
-					</item>
-					<item>
-						<name>wpreset</name>
-						<label>Reset WP Transition</label>
-						<binding>
-							<command>nasal</command>
-							<script>
-								fmgc.wp_transit.init();
-							</script>
-						</binding>
-					</item>
-					<item>
-						<name>hydreset</name>
-						<label>Reset Hydraulics</label>
-						<binding>
-							<command>nasal</command>
-							<script>
-								hydraulics.hydraulics_loop.init();
-							</script>
-						</binding>
-					</item>
-				</menu>
-				<menu n="101">
-					<label>Reset Systems</label>
-					<item>
-						<name>fmgcreset</name>
-						<label>Reset FMGC Loop</label>
-						<binding>
-							<command>nasal</command>
-							<script>
-								fmgc.fmgc_loop.init();
-							</script>
-						</binding>
-					</item>
-					<item>
-						<name>wpreset</name>
-						<label>Reset WP Transition</label>
-						<binding>
-							<command>nasal</command>
-							<script>
-								fmgc.wp_transit.init();
-							</script>
-						</binding>
-					</item>
-					<item>
-						<name>hydreset</name>
-						<label>Reset Hydraulics</label>
-						<binding>
-							<command>nasal</command>
-							<script>
-								hydraulics.hydraulics_loop.init();
 							</script>
 						</binding>
 					</item>
@@ -1142,9 +1027,6 @@
 		<dual_control>
 			<file>Aircraft/Generic/DualControl/pilot-dual-control.nas</file>
 		</dual_control>
-		<yoke>
-			<file>Aircraft/A330-300/Nasal/yoke.nas</file>
-		</yoke>
 	</nasal>
 
 	

@@ -60,21 +60,9 @@ refs 4
 3 0.990386 0.0507198
 kids 0
 OBJECT poly
-<<<<<<< HEAD
-<<<<<<< HEAD
-name "sidestick-max"
-loc 0.000918277 -0.0216617 0.0287131
-texture "autoland.png"
-=======
 name "spd-tape"
 loc -0.00063943 -0.000264099 0.0592757
 texture "spd-tape.png"
->>>>>>> 3e25c56... Brought it up to date
-=======
-name "spd-tape"
-loc -0.00063943 -0.000264099 0.0592757
-texture "spd-tape.png"
->>>>>>> rembrandt
 crease 45.000000
 numvert 4
 0 -0.0428304 -0.00990531
@@ -110,21 +98,9 @@ refs 4
 0 0.660342 0.258462
 kids 0
 OBJECT poly
-<<<<<<< HEAD
-<<<<<<< HEAD
-name "sidestick-max"
-loc 0.000918277 0.0234689 0.0287131
-texture "autoland.png"
-=======
 name "rect"
 loc 0.0643506 0 0
 texture "mask.png"
->>>>>>> 3e25c56... Brought it up to date
-=======
-name "rect"
-loc 0.0643506 0 0
-texture "mask.png"
->>>>>>> rembrandt
 crease 45.000000
 numvert 4
 -0.0639733 0.0784821 -0.0784821
@@ -372,21 +348,9 @@ refs 4
 7 0.629302 0.44775
 kids 0
 OBJECT poly
-<<<<<<< HEAD
-<<<<<<< HEAD
-name "rect"
-loc 0.0643506 0 0
-texture "mask.png"
-=======
 name "autoland.retard"
 loc 0.00196986 0.0675344 0.0214274
 texture "autoland.png"
->>>>>>> 3e25c56... Brought it up to date
-=======
-name "autoland.retard"
-loc 0.00196986 0.0675344 0.0214274
-texture "autoland.png"
->>>>>>> rembrandt
 crease 45.000000
 numvert 4
 0 -0.00336499 -0.0150037
