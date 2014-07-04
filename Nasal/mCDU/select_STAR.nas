@@ -106,16 +106,6 @@ var star = {
 		setprop("/flight-management/procedures/star-current", 0);
 		setprop("/flight-management/procedures/star-transit", me.WPmax);
 		
-		if(getprop("/flight-management/alternate/icao") == "empty") {
-		
-			setprop(rm_route~ "input", "@INSERT99:" ~ getprop("/autopilot/route-manager/departure/airport") ~ "@0");
-		
-		} else {
-		
-			setprop(rm_route~ "input", "@INSERT99:" ~ getprop("/flight-management/alternate/icao") ~ "@0");
-		
-		}
-		
 		setprop("/instrumentation/mcdu/page", "f-pln");
 		
 		mcdu.f_pln.update_disp();

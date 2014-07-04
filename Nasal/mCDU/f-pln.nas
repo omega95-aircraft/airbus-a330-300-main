@@ -221,9 +221,11 @@ var f_pln = {
 			var last_time = 0;
 			
 			if (wp != 1)
-				last_time = getprop(rm_route~ "route/wp[" ~ (wp - 1) ~ "]/leg-time");
+				last_time = int(getprop(rm_route~ "route/wp[" ~ (wp - 1) ~ "]/leg-distance-nm")/4.166);
+				# getprop(rm_route~ "route/wp[" ~ (wp - 1) ~ "]/leg-time");
 			else
-				last_time = getprop(rm_route~ "route/wp[" ~ (wp - 1) ~ "]/leg-time") + 30;
+				last_time = int(getprop(rm_route~ "route/wp[" ~ (wp - 1) ~ "]/leg-distance-nm")/4.166) + 30;
+				# getprop(rm_route~ "route/wp[" ~ (wp - 1) ~ "]/leg-time") + 30;
 				
 			# Atm, using 30 min for taxi time. You will be able to change this in INIT B when it's completed
 			

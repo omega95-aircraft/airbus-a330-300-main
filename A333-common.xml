@@ -148,6 +148,11 @@
 				<path>Aircraft/Generic/generic-autopilot-helper.xml</path>
 			</autopilot>
 			
+			<autopilot>
+				<name>Speed Trend</name>
+				<path>Aircraft/A330-200/Systems/a332-speedtrend.xml</path>
+			</autopilot>
+			
 			<!-- Autopilot Control ========================================= -->
 			
 			<autopilot>
@@ -266,6 +271,16 @@
 						</binding>
 					</item>
 					<item>
+						<label>Tiller Steering</label>
+						<binding>
+							<command>nasal</command>
+							<script>
+								var tiller = gui.Dialog.new("/sim/gui/dialogs/tiller/dialog","Aircraft/A330-200/Systems/tiller-dlg.xml");
+								tiller.open();
+							</script>
+						</binding>
+					</item>
+					<item>
 						<name>lights</name>
 						<label>Lights</label>
 						<binding>
@@ -327,6 +342,39 @@
 							<script>
 								var mcdu_inp = gui.Dialog.new("sim/gui/dialogs/mcdu_input_dlg/dialog", "Aircraft/A330-300/Systems/mcdu-input-dlg.xml");
 								mcdu_inp.open();
+							</script>
+						</binding>
+					</item>
+				</menu>
+				<menu n="101">
+					<label>Reset Systems</label>
+					<item>
+						<name>fmgcreset</name>
+						<label>Reset FMGC Loop</label>
+						<binding>
+							<command>nasal</command>
+							<script>
+								fmgc.fmgc_loop.init();
+							</script>
+						</binding>
+					</item>
+					<item>
+						<name>wpreset</name>
+						<label>Reset WP Transition</label>
+						<binding>
+							<command>nasal</command>
+							<script>
+								fmgc.wp_transit.init();
+							</script>
+						</binding>
+					</item>
+					<item>
+						<name>hydreset</name>
+						<label>Reset Hydraulics</label>
+						<binding>
+							<command>nasal</command>
+							<script>
+								hydraulics.hydraulics_loop.init();
 							</script>
 						</binding>
 					</item>
@@ -474,6 +522,8 @@
 	<controls>
 		<gear>
 			<brake-parking type="bool">true</brake-parking>
+			<tiller-cmd-norm type="double">0</tiller-cmd-norm>
+			<tiller-enabled type="bool">false</tiller-enabled>
 		</gear>
 		<APU>
 			<fire-switch type="bool">false</fire-switch>
@@ -581,7 +631,8 @@
 		</mcdu>
 	
 		<efis n="0">
-
+			<baro-mode type="bool">false</baro-mode>
+			<baro-std-mode type="bool">false</baro-std-mode>
 			<ecam>
 					<display-mode type="string">FUEL</display-mode>
 			</ecam>
@@ -611,7 +662,8 @@
 		</efis>
 	
 		<efis n="1">
-
+			<baro-mode type="bool">false</baro-mode>
+			<baro-std-mode type="bool">false</baro-std-mode>
 			<ecam>
 					<display-mode type="string">FUEL</display-mode>
 			</ecam>
@@ -1015,6 +1067,7 @@
 		</fbw>
 
 		<a333>
+			<file>Aircraft/A330-300/Nasal/fueljett.nas</file>
 			<file>Aircraft/A330-300/Nasal/terrainmap.nas</file>
 			<file>Aircraft/A330-300/Nasal/ground-services.nas</file>
 			<file>Aircraft/A330-300/Nasal/doors.nas</file>
