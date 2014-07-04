@@ -777,8 +777,11 @@
     </copilot3>
     
 <<<<<<< HEAD
+<<<<<<< HEAD
     <!-- New Warnings/Sounds -->
 =======
+=======
+>>>>>>> rembrandt
     <!-- Announcements -->
 
 <announcement>
@@ -1083,7 +1086,10 @@
 </announcement>
 
 	<!-- New Warnings/Sounds -->
+<<<<<<< HEAD
 >>>>>>> 3e25c56... Brought it up to date
+=======
+>>>>>>> rembrandt
 	
 	<gearwarn>
 		<name>Gear warning</name>
@@ -1113,6 +1119,7 @@
 	<ap_disc>
 		<name>AP Disconnect warning</name>
 <<<<<<< HEAD
+<<<<<<< HEAD
 		<path>/Aircraft/A330-300/Sounds/res/ap_disc.wav</path>
 		<mode>once</mode>
 		<type>avionics</type>
@@ -1126,12 +1133,17 @@
 				<value>off</value>
 			</equals>
 =======
+=======
+>>>>>>> rembrandt
 		<path>/Aircraft/A330-300/Sounds/res/airbus-warning.wav</path>
 		<mode>once</mode>
 		<type>avionics</type>
 		<condition>
 			<property>/sim/sound/warnings/ap_disc</property>
+<<<<<<< HEAD
 >>>>>>> 3e25c56... Brought it up to date
+=======
+>>>>>>> rembrandt
 		</condition>
 		<volume>
 			<property>sim/sound/effects/volume</property>
@@ -1140,7 +1152,10 @@
 		<max-dist>100</max-dist>
 	</ap_disc>
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> rembrandt
 	
 	<chime>
 		<name>Chime</name>
@@ -1172,7 +1187,10 @@
 		<reference-dist>10</reference-dist>
 		<max-dist>100</max-dist>
 	</crc>
+<<<<<<< HEAD
 >>>>>>> 3e25c56... Brought it up to date
+=======
+>>>>>>> rembrandt
     
     <ge include="GE-sound.xml" omit-node="y" />
     

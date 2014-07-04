@@ -2132,6 +2132,7 @@
 			<binding>
 				<command>property-cycle</command>
 				<property>/instrumentation/nd/range</property>
+<<<<<<< HEAD
 				<value>10</value>
 				<value>20</value>
 				<value>40</value>
@@ -2142,6 +2143,8 @@
 			<binding>
 				<command>property-cycle</command>
 				<property>/instrumentation/nd[1]/range</property>
+=======
+>>>>>>> rembrandt
 				<value>10</value>
 				<value>20</value>
 				<value>40</value>
@@ -2221,7 +2224,11 @@
 	<animation>
 		<type>rotate</type>
 		<object-name>nd-range</object-name>
+<<<<<<< HEAD
 		<property>/instrumentation/nd[0]/range</property>
+=======
+		<property>/instrumentation/nd/range</property>
+>>>>>>> rembrandt
 		<interpolation>
 			<entry><ind>10</ind><dep>0</dep></entry>
 			<entry><ind>20</ind><dep>45</dep></entry>
@@ -2243,7 +2250,11 @@
 	<animation>
 		<type>rotate</type>
 		<object-name>nd-range-right</object-name>
+<<<<<<< HEAD
 		<property>/instrumentation/nd[0]/range</property>
+=======
+		<property>/instrumentation/nd/range</property>
+>>>>>>> rembrandt
 		<interpolation>
 			<entry><ind>10</ind><dep>0</dep></entry>
 			<entry><ind>20</ind><dep>45</dep></entry>
@@ -2983,6 +2994,7 @@
     </animation>
 	
 	<!-- small frequency selector (selects values behind decimal point -->
+<<<<<<< HEAD
 	
 	<animation>
         <type>pick</type>
@@ -3021,6 +3033,46 @@
 	
 	<animation>
         <type>pick</type>
+=======
+	
+	<animation>
+        <type>pick</type>
+        <object-name>comm_freq_select2</object-name>
+        <action>
+            <button>3</button>
+            <repeatable>true</repeatable>
+            <binding>
+                <command>property-adjust</command>
+                <property>instrumentation/comm/frequencies/standby-mhz</property>
+				<step>0.025</step>
+				<min>118.000</min>
+				<max>136.000</max>
+            </binding>            
+        </action>
+    </animation>
+	
+	<animation>
+        <type>pick</type>
+        <object-name>comm_freq_select2</object-name>
+        <action>
+            <button>4</button>
+            <repeatable>true</repeatable>
+            <binding>
+                <command>property-adjust</command>
+                <property>instrumentation/comm/frequencies/standby-mhz</property>
+				<step>-0.025</step>
+				<min>118.000</min>
+				<max>136.000</max>
+            </binding>           
+        </action>
+    </animation>
+	
+	
+	<!-- switch between active and stby frequency-->
+	
+	<animation>
+        <type>pick</type>
+>>>>>>> rembrandt
         <object-name>comm_switch</object-name>
         <action>
             <button>0</button>

@@ -9,6 +9,11 @@
 		<path>Aircraft/A330-300/Models/trent772b-60.xml</path>
 	</model>
 	
+	<model>
+		<name>Rembrandt Lighting</name>
+		<path>Aircraft/A330-300/Models/Lights/rembrandt.xml</path>
+	</model>
+	
 	<!-- Separate Flightdeck to fit the modified nose -->
 	<model>
 		<name>Flightdeck</name>
